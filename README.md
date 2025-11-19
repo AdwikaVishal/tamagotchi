@@ -1,108 +1,107 @@
-# 🌟 Open Innovation - Contribution Sprint
+# 🐾 Terminal Tamagotchi
 
-Welcome to the **Open Innovation Sprint** - the most flexible and creative part of the Contribution Sprint event!
+A nostalgic virtual pet that lives in your command line! Take care of your ASCII pet by feeding, playing, studying, and watching it evolve through different life stages.
 
-This repository has **no boilerplate, no code, no rules about what to build**.  
-Your job is simple:
+## 🎮 Features
 
-### Fork this repo and build ANY project you want.
+- **ASCII Art Pet**: Your pet is displayed using cute ASCII art that changes as it evolves
+- **Evolution System**: Watch your pet grow from baby → teen → adult → master
+- **Interactive Actions**: Feed, sleep, play games, study, and clean
+- **Mini Games**: Rock-Paper-Scissors, number guessing, and riddles
+- **Stats System**: Hunger, Energy, Happiness, Intelligence with visual bars
+- **Persistence**: Your pet stays alive even when you close the game
+- **Random Events**: Surprise events that affect your pet's stats
+- **Animations**: Simple frame-based animations for actions
 
-Small, big, weird, fun, useful, experimental - everything is allowed.
+## 🚀 How to Run
 
-## What Can You Build?
+```bash
+python3 tamagotchi.py
+```
 
-Anything. Seriously.
+No additional dependencies required - uses only Python standard library!
 
-Some ideas to spark creativity:
+## 🎯 Controls
 
-### Applications
+- `f` or `feed` - Feed your pet (increases hunger)
+- `s` or `sleep` - Let your pet nap (restores energy)  
+- `p` or `play` - Play mini-games (increases happiness)
+- `st` or `study` - Study session (increases intelligence)
+- `c` or `clean` - Clean up messes (removes messy state)
+- `q` or `quit` - Save and exit
 
-- A CLI tool
-- A tiny utility app
-- A file organizer
-- A weather app
-- A browser extension
-- A productivity script
-- A note-taking tool
+## 📊 Stats Explained
 
-### AI / ML (small-scale)
+- **Hunger**: Decreases over time, feed to restore
+- **Energy**: Used for activities, sleep to restore  
+- **Happiness**: Gained through play and games
+- **Intelligence**: Increased through studying and riddles
+- **Level/XP**: Gained through all activities, triggers evolution
 
-- Sentiment analyzer
-- Basic recommendation system
-- Chatbot for a specific task
-- Simple image classifier
-- Data visualization notebook
+## 🌟 Evolution Stages
 
-### Automation
+### Baby (Level 1-2)
+```
+   ◕   ◕  
+     ω    
+  \     / 
+   ‾‾‾‾‾  
+```
 
-- Web scraper
-- Auto-email tool
-- Screenshot organizer
-- Media renamer
-- Git helper script
+### Teen (Level 3-5)
+```
+  ◉     ◉ 
+     ▽    
+ \       /
+  ‾‾‾‾‾‾‾ 
+```
 
-### Creative / Fun Projects
+### Adult (Level 6-9)
+```
+ ◉  ___  ◉
+    \_/   
+\         /
+ ‾‾‾‾‾‾‾‾‾
+```
 
-- Data art generator
-- Text-based adventure
-- Mini storytelling bot
-- Desktop widget
-- ASCII animations
+### Master (Level 10+)
+```
+★ ◉ ___ ◉ ★
+    \_/    
+ \       / 
+  ‾‾‾‾‾‾‾  
+```
 
-### Experiments
+## 🎮 Mini Games
 
-- Interesting algorithms
-- DevTools extensions
-- Micro APIs
-- Performance experiments
-- Code golf challenges
+1. **Rock-Paper-Scissors**: Classic game against your pet
+2. **Number Guessing**: Guess the number between 1-10
+3. **Riddles**: Answer fun riddles to boost intelligence
 
-Your imagination is the only limit.
+## ⚠️ Game Over Conditions
 
-## How to Participate
+- If 2 or more stats reach 0, your pet runs away
+- Keep your pet healthy by balancing all stats
+- Stats decay over time, so check in regularly!
 
-1. **Fork** this repository
-2. **Clone** it to your machine
-3. Create your project **inside the root folder** or your own directory
-4. Build your project using _any_ language or framework
-5. Push your final project to your forked repository
-6. Add a **README in your fork** with:
-   - Project name
-   - Short description
-   - How to run it
-   - Screenshot / GIF **or** deployment link (if hosted)
+## 💾 Save System
 
-## If Your Project Is Deployable
+Your pet's data is automatically saved to `tamagotchi_save.json`. Delete this file to start fresh with a new pet.
 
-Host it anywhere:
+## 🎨 Special States
 
-- GitHub Pages
-- Vercel
-- Netlify
-- Render
-- Railway
-- HuggingFace Spaces
+- **😷 SICK**: When one stat hits 0
+- **💩 MESSY**: Random chance after feeding (use clean command)
+- **Animations**: Eating, sleeping, and evolution sequences
 
-Then add the link to your fork's README.
+## 🏆 Tips
 
-## Tips
+- Play regularly to keep stats balanced
+- Study to unlock higher intelligence for better riddle performance
+- Sleep when energy is low to maximize efficiency
+- Clean up messes to maintain happiness
+- Try different mini-games for varied XP gains
 
-- Focus on creativity and originality
-- Try something you've never tried before
-- Don't overthink - build something cool and fun
+---
 
-## What This Sprint Evaluates
-
-- Creativity
-- Practical thinking
-- Implementation skills
-- Documentation quality
-- Ability to deliver a complete idea
-- Presentation (README + screenshots)
-
-## Have Fun
-
-This sprint exists so you can **build anything you've always wanted to try**.  
-Surprise us with something fresh, fun, weird, or brilliant.
-
-Happy building!
+*Built for the Open Innovation Sprint - A terminal-based throwback to the classic 90s virtual pets!*
