@@ -18,6 +18,8 @@ A nostalgic virtual pet that lives in your command line! Take care of your ASCII
 ```bash
 python3 tamagotchi.py
 ```
+https://codespaces.new/AdwikaVishal/tamagotchi
+
 
 No additional dependencies required - uses only Python standard library!
 
